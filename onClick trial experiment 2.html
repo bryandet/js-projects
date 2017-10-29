@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+    <head>
+        <title>onMouseOver trial 2</title>
+    </head>
+    <body>       
+            <input type="image" id="img" value="2" src="image1.png" onclick="buttonClick()";/>
+    </body>
+            <script>
+                
+                 function buttonClick() {
+                    var value = parseInt(document.getElementById("img").value, 10);
+                    value++;
+                    document.getElementById("img").value = value;
+                
+                    if (value%2 == 0) {
+                    document.getElementById("img").src='image1.png';
+                    }  else {
+                    document.getElementById("img").src='image2.png';
+                    }}
+            </script>
+</html>
