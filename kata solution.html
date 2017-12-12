@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Calling Fuctions</title>
+        <script>
+         var myArray = [];
+         myArray = Array.from('aaabbcccdaabbbbd');
+         function solver(x) {
+            for (var i = 0; i < x.length; ) {
+                if (x[i]===x[i+1]) {
+                    x.splice(i, 1);
+                }  else {
+                    i++;
+                }
+                }
+                return x;
+            }
+        
+
+        </script>
+    </head>
+    <body>       
+        
+    </body>
+</html>
